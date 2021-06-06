@@ -13,7 +13,7 @@ class ProjectsController < ApplicationController
     #     {id: 2, 
     #     text: 'Выбросить мусор', 
     #     isCompleted: true}]}]
-    @projects = AllProject.all
+    # @projects = AllProject.all
     # @project = Project.all
     # for item in @projects do
     #   puts item.title
@@ -23,6 +23,6 @@ class ProjectsController < ApplicationController
     # end
 
     # puts @project.find(1).text
-    render json: @projects
+    render json: {message: "ok"}
   end
 end
