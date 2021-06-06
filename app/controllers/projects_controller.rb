@@ -14,7 +14,7 @@ class ProjectsController < ApplicationController
     #     text: 'Выбросить мусор', 
     #     isCompleted: true}]}]
     @projects = AllProject.all
-    @project = Project.all
+    # @project = Project.all
     # for item in @projects do
     #   puts item.title
     #   if  @project.find(item.id)
@@ -22,7 +22,7 @@ class ProjectsController < ApplicationController
     #   end
     # end
 
-    puts @project.find(1).text
+    # puts @project.find(1).text
     render json: @projects
   end
 end
