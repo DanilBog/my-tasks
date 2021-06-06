@@ -81,7 +81,6 @@ test:
 #
 production:
   <<: *default
-  host: ec2-54-243-92-68.compute-1.amazonaws.com
-  database: ddp95g12rendub
-  username: lsvkntcujotsgd
-  password: 5d0da8851f72a5a9b4cfa15012ea1c3e530ee7becc701948300c8a4fd629ff34
+  database: my_tasks_production
+  username: my_tasks
+  password: <%= ENV['MY_TASKS_DATABASE_PASSWORD'] %>
